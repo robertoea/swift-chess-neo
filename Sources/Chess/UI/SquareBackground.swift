@@ -16,7 +16,7 @@ public struct SquareBackground: View {
     }
     public func color(_ themeColor: Chess.UI.BoardColor, for position: Chess.Position) -> Color {
         let evenSquare: Bool = (position.rank + position.fileNumber) % 2 == 0
-        return evenSquare ? themeColor.dark : themeColor.light
+        return evenSquare ? themeColor.light : themeColor.dark
     }
     public init(_ idx: Int) {
         self.position = Chess.Position(idx)
